@@ -1,7 +1,7 @@
 wait(3)
 local Player = game.Players.LocalPlayer
 local PlayerName = Player.Name
-if PlayerName == "JASboy53" then
+if PlayerName == "JASboy53" or PlayerName == "makikazumi" then
     game.StarterGui:SetCore("SendNotification",{Title = "Usuario registrado", Text = "Estpera un tiempo",Duration = 5})
 wait(5)
 game.StarterGui:SetCore("SendNotification",{Title = "Gracias por comprar el script", Text = "Script creado por: JAS", Duration = 15})        
