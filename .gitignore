@@ -29,3 +29,4 @@ wait(2)
 game.StarterGui:SetCore("SendNotification",{Title = "Unregistered user", Text = "Paga por el script amor, vete al adopt me", Duration = 15})
 wait(15)
 game:GetService("TeleportService"):Teleport(920587237, LocalPlayer)
+
