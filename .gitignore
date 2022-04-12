@@ -1,41 +1,31 @@
-# Compiled Lua sources
-luac.out
-
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
-
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
+wait(3)
+local Player = game.Players.LocalPlayer
+local PlayerName = Player.Name
+if PlayerName == "makikazumi" then
+    game.StarterGui:SetCore("SendNotification",{Title = "Usuario registrado", Text = "Estpera un tiempo",Duration = 5})
+wait(5)
+game.StarterGui:SetCore("SendNotification",{Title = "Gracias por comprar el script", Text = "Script creado por: JAS", Duration = 15})        
+_G.Yes = true
+ while _G.Yes do
+local args = {
+    [1] = "Summon",
+    [2] = "Stand"
+}
+game:GetService("ReplicatedStorage").RSPackage.Events.GeneralFunction:InvokeServer(unpack(args))
+local args = {
+    [1] = "SpecialAction",
+    [2] = {
+        ["MouseCF"] = CFrame.new(1994.9635009765625, 58, 351.95452880859375) * CFrame.Angles(-2.6948838233947754, 0.030156107619404793, 3.1271510124206543),
+        ["Key"] = "V",
+        ["MousePos"] = Vector3.new(1994.9635009765625, 58, 351.95452880859375),
+        ["Request"] = "Power",
+        ["MouseHit"] = workspace.MiscModels.Land.Grass
+    }
+}
+game:GetService("ReplicatedStorage").RSPackage.Events.GeneralEvent:FireServer(unpack(args))
+end
+end
+wait(2)
+game.StarterGui:SetCore("SendNotification",{Title = "Unregistered user", Text = "Paga por el script amor, vete al adopt me", Duration = 15})
+wait(15)
+game:GetService("TeleportService"):Teleport(920587237, LocalPlayer)
