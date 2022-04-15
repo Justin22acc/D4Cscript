@@ -2,7 +2,7 @@ wait(3)
 local Player = game.Players.LocalPlayer
 local PlayerName = Player.Name
 if PlayerName == "JASboy53" or PlayerName == "makikazumi" then
-    game.StarterGui:SetCore("SendNotification",{Title = "Usuario registrado", Text = "Estpera un tiempo",Duration = 5})
+    game.StarterGui:SetCore("SendNotification",{Title = "Usuario registrado", Text = "Espera un tiempo",Duration = 5})
 wait(5)
 game.StarterGui:SetCore("SendNotification",{Title = "Gracias por comprar el script", Text = "Script creado por: JAS", Duration = 15})        
 _G.Yes = true
@@ -26,7 +26,7 @@ game:GetService("ReplicatedStorage").RSPackage.Events.GeneralEvent:FireServer(un
 end
 end
 wait(2)
-game.StarterGui:SetCore("SendNotification",{Title = "Unregistered user", Text = "Paga por el script amor, vete al adopt me", Duration = 15})
+game.StarterGui:SetCore("SendNotification",{Title = "Unregistered user", Text = "Paga por el script, vete al adopt me", Duration = 15})
 wait(15)
 game:GetService("TeleportService"):Teleport(920587237, LocalPlayer)
 
